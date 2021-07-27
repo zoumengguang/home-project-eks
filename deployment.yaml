@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-service
+  labels:
+    app: hello
 spec:
   selector:
     app: hello
@@ -15,7 +17,9 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello
+  name: hello-deployment
+  labels: 
+    app: hello
 spec:
   selector:
     matchLabels:
