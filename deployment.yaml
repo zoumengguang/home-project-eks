@@ -31,7 +31,7 @@ spec:
         app: hello
     spec:
       containers:
-      - name: hello
+      - name: hello-container
         image: 773867802764.dkr.ecr.us-west-2.amazonaws.com/home-project:home-project-build-latest
         ports:
         - containerPort: 5000
